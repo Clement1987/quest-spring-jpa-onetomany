@@ -28,6 +28,7 @@ public class SchoolController {
 
     @GetMapping("/")
     public String getSchools(Model out) {
+    	
 
         out.addAttribute("schools", schoolRepository.findAll());
 
